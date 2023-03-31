@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { parent_submit } from "../redux/actionCreators";
 import { useNavigate, Link } from "react-router-dom";
 import "../styles/style.css";
-import boy from "../images/boy.jpg";
+import father from "../images/father.jpg";
 
 const Parent = () => {
   const [ParentText, setParentText] = useState("");
@@ -34,10 +34,10 @@ const Parent = () => {
       <div className="sub-part">
         <div className="nav">
           <div>
-            <img className="boy" src={boy} alt="boy" />
+            <img className="father" src={father} alt="father" />
           </div>
 
-          <h3>Son</h3>
+          <h3>Dad</h3>
 
           <div>
             <button id="home" onClick={home}>
