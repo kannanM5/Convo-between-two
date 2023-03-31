@@ -40,3 +40,14 @@ body {
 #son {
   width: 40px;
 }
+
+@media (max-width: 800px) and (min-width: 600px) {
+  .app {
+    width: 300px;
+  }
+}
+@media (max-width: 600px) and (min-width: 400px) {
+  .app {
+    width: 150px;
+  }
+}

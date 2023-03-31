@@ -7,8 +7,6 @@
   height: 50vh;
 }
 .sub-part {
-  background-repeat: no-repeat;
-  background-size: cover;
   border: 1px solid black;
   border-radius: 5px;
   width: 400px;
@@ -82,4 +80,31 @@ a {
 }
 img:hover {
   width: 55px;
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+  .sub-part {
+    width: 250px;
+  }
+  input {
+    width: 97%;
+    margin-bottom: 5px;
+  }
+  .boxes {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) and (min-width: 400px) {
+  .sub-part {
+    width: 150px;
+  }
+  input {
+    width: 95%;
+    margin-bottom: 5px;
+  }
+  .boxes {
+    display: flex;
+    flex-direction: column;
+  }
 }
