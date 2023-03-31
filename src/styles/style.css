@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 50vh;
+  height: 100vh;
 }
 .sub-part {
   border: 1px solid black;
@@ -84,7 +84,7 @@ img:hover {
 
 @media (max-width: 800px) and (min-width: 600px) {
   .sub-part {
-    width: 250px;
+    width: 255px;
   }
   input {
     width: 97%;
@@ -95,9 +95,9 @@ img:hover {
     flex-direction: column;
   }
 }
-@media (max-width: 600px) and (min-width: 400px) {
+@media (max-width: 600px) and (min-width: 300px) {
   .sub-part {
-    width: 150px;
+    width: 180px;
   }
   input {
     width: 95%;
