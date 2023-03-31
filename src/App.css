@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(248, 248, 246);
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  border: 1px solid black;
+  padding: 15px;
+  box-shadow: 1px 1px 1px black;
+  background-color: rgb(212, 243, 213);
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 70vh;
+}
+.btn {
+  border: none;
+  background-color: rgb(85, 161, 90);
+  color: rgb(23, 23, 24);
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 5px 12px;
+  width: 100%;
+}
+.btn:hover {
+  background-color: grey;
+  color: white;
+}
+
+#father {
+  width: 40px;
+}
+#son {
+  width: 40px;
+}

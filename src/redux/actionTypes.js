@@ -1,0 +1,2 @@
+export const PARENT_SUBMIT = "PARENT_SUBMIT"
+export const CHILD_SUBMIT = "CHILD_SUBMIT"
