@@ -51,14 +51,14 @@ const Parent = () => {
             <div className="section" key={i}>
               <div className="right-section">
                 <span className="right-sectionColor">
-                  <span className="msg">{e.childMsg} </span>
-                  <span className="dur">{e.childDur}</span>
+                  <span className="msg">{e.parentMsg} </span>
+                  <span className="dur">{e.parentDur}</span>
                 </span>
               </div>
               <div className="left-section">
                 <span className="left-sectionColor">
-                  <span className="msg">{e.parentMsg} </span>
-                  <span className="dur">{e.parentDur}</span>
+                  <span className="msg">{e.childMsg} </span>
+                  <span className="dur">{e.childDur}</span>
                 </span>
               </div>
             </div>

@@ -10,6 +10,7 @@ export const parent_submit = (message, time) => {
 };
 
 export const child_submit = (message, time) => {
+  console.log(message, time);
   return {
     type: CHILD_SUBMIT,
     payload: message,

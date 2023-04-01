@@ -1,14 +1,6 @@
 import { PARENT_SUBMIT, CHILD_SUBMIT } from "./actionTypes";
 
 const initialState = {
-  // array: [
-  //   {
-  //     parentMsg: "Hi john",
-  //     parentDur: "8:20 PM",
-  //   },
-  //   { childMsg: "Hi dad...", childDur: "8:26 PM" },
-  // ],
-
   array: [
     {
       parentMsg: "Hi john",
@@ -32,7 +24,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         array: [
           ...state.array,
-          { parentMsg: action.payload, ParentDur: action.time },
+          { parentMsg: action.payload, parentDur: action.time },
         ],
       };
     case CHILD_SUBMIT:
