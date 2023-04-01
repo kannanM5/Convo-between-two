@@ -8,6 +8,7 @@ import boy from "../images/boy.jpg";
 const Child = () => {
   const [childText, setChildText] = useState("");
   const select = useSelector((state) => state);
+  // const selectPar = useSelector((state) => state);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -32,39 +33,61 @@ const Child = () => {
 
   return (
     <div className="content">
-      <h2>Message from Son</h2>
-      <div className="sub-part">
-        <div className="nav">
+      <h2>Son to Father</h2>
+      <div className="main">
+        <div className="navbar">
           <div>
-            <img className="boy" src={boy} alt="boy" />
+            <img className="boyImage" src={boy} alt="boy" />
           </div>
           <h3>Son</h3>
 
           <div>
-            <button id="home" onClick={home}>
+            <button id="homeBtn" onClick={home}>
               Back
             </button>
           </div>
         </div>
 
-        {select.childArray.map((e, i) => {
+        {select.array.map((e, i) => {
           return (
-            <div className="separ1" key={i}>
-              <span className="msg">{e.msg} </span>
-              <span className="dur">{e.dur}</span>
+            <div className="section" key={i}>
+              <div className="right-section">
+                <span className="right-sectionColor">
+                  <span className="msg">{e.parentMsg} </span>
+                  <span className="dur">{e.parentDur}</span>
+                </span>
+              </div>
+              <div className="left-section">
+                <span className="left-sectionColor">
+                  <span className="msg">{e.childMsg} </span>
+                  <span className="dur">{e.childDur}</span>
+                </span>
+              </div>
             </div>
           );
         })}
-        <div className="boxes">
-          <div className="gap">
+        {/* {selectPar.childArray.map((e, i) => {
+          return (
+            <div className="section" key={i}>
+              <div className="right-section">
+                <span className="right-sectionColor">
+                  <span className="msg">{e.childMsg} </span>
+                  <span className="dur">{e.childDur}</span>
+                </span>
+              </div>
+            </div>
+          );
+        })} */}
+        <div className="footer">
+          <div className="gap-1">
             <input
               type="text"
               value={childText}
               onChange={(e) => setChildText(e.target.value)}
             />
           </div>
-          <div className="gap">
-            <button className="btn" onClick={submit}>
+          <div className="gap-2">
+            <button className="btn-1" onClick={submit}>
               Enter
             </button>
           </div>

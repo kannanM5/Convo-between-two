@@ -4,16 +4,15 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
+  height: 90vh;
 }
-.sub-part {
+.main {
   border: 1px solid black;
   border-radius: 5px;
   width: 400px;
-  background-color: white;
+  background-color: rgb(250, 250, 248);
 }
-
-.nav {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +20,15 @@
   margin-bottom: 30px;
   padding: 5px;
 }
-#home {
+.boyImage {
+  width: 50px;
+  border-radius: 26px;
+}
+.fatherImage {
+  width: 50px;
+  border-radius: 26px;
+}
+#homeBtn {
   background-color: rgba(168, 245, 177, 0.792);
   border: none;
   padding: 5px 10px;
@@ -30,35 +37,58 @@
   background-color: gray;
   color: white;
 }
+.section {
+  padding: 1px 5px;
+}
+.left-section {
+  text-align: left;
+  margin-bottom: 5px;
+}
+.right-section {
+  text-align: right;
+  margin-bottom: 5px;
+}
+.left-sectionColor {
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+.right-sectionColor {
+  padding: 2px 6px;
+  border-radius: 5px;
+}
 .msg {
   font-size: 19px;
-  margin-right: 5px;
+  margin-right: 3px;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
 .dur {
-  font-size: 12px;
+  font-size: 11px;
   color: rgb(126, 124, 124);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.separ {
-  margin-bottom: 10px;
-  text-align: right;
-  padding: 5px 10px 5px 0;
-}
-.separ1 {
-  text-align: left;
-  margin-bottom: 10px;
-  padding: 5px 0 5px 10px;
-}
-.boxes {
+.footer {
   margin-top: 30px;
   display: flex;
-  justify-content: space-between;
+}
+.btn-1 {
+  border: none;
+  background-color: rgb(85, 161, 90);
+  color: rgb(23, 23, 24);
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 5px 12px;
+  width: 100%;
 }
 input {
-  width: 190%;
   height: 20px;
+  width: 100%;
+}
+.gap-1 {
+  flex: 3;
+}
+.gap-2 {
+  flex: 1;
 }
 span,
 h3 {
@@ -67,14 +97,7 @@ h3 {
 span:hover {
   background-color: rgb(179, 243, 243);
 }
-.boy {
-  width: 50px;
-  border-radius: 26px;
-}
-.father {
-  width: 50px;
-  border-radius: 26px;
-}
+
 a {
   margin-top: 5px;
 }
@@ -87,12 +110,21 @@ img:hover {
     width: 255px;
   }
   input {
-    width: 97%;
+    width: 98%;
     margin-bottom: 5px;
   }
-  .boxes {
+  .footer {
     display: flex;
     flex-direction: column;
+  }
+  .msg {
+    font-size: 14px;
+  }
+  .dur {
+    font-size: 9;
+  }
+  h2 {
+    font-size: 20px;
   }
 }
 @media (max-width: 600px) and (min-width: 300px) {
@@ -100,11 +132,14 @@ img:hover {
     width: 180px;
   }
   input {
-    width: 95%;
+    width: 98%;
     margin-bottom: 5px;
   }
-  .boxes {
+  .footer {
     display: flex;
     flex-direction: column;
+  }
+  h2 {
+    font-size: 15px;
   }
 }
